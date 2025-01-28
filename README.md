@@ -1,54 +1,114 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Canais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-# GitHub Pages
+        .channel-list {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+        .channel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+        }
 
-</header>
+        .channel:last-child {
+            border-bottom: none;
+        }
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+        .channel img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
 
-## Step 1: Enable GitHub Pages
+        .channel-info {
+            text-align: left;
+            flex-grow: 1;
+        }
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+        .channel-info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+        .channel-info p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 14px;
+        }
 
-### :keyboard: Activity: Enable GitHub Pages
+        .channel a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+        .channel a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Canais</h1>
+    <div class="channel-list">
+        <!-- Canal 1 -->
+        <div class="channel">
+            <img src="https://via.placeholder.com/50" alt="Logo Canal 1">
+            <div class="channel-info">
+                <h3>Canal 1</h3>
+                <p>Descrição do canal 1</p>
+            </div>
+            <a href="https://example.com/canal1" target="_blank">Assistir</a>
+        </div>
 
-<footer>
+        <!-- Canal 2 -->
+        <div class="channel">
+            <img src="https://via.placeholder.com/50" alt="Logo Canal 2">
+            <div class="channel-info">
+                <h3>Canal 2</h3>
+                <p>Descrição do canal 2</p>
+            </div>
+            <a href="https://example.com/canal2" target="_blank">Assistir</a>
+        </div>
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+        <!-- Canal 3 -->
+        <div class="channel">
+            <img src="https://via.placeholder.com/50" alt="Logo Canal 3">
+            <div class="channel-info">
+                <h3>Canal 3</h3>
+                <p>Descrição do canal 3</p>
+            </div>
+            <a href="https://example.com/canal3" target="_blank">Assistir</a>
+        </div>
+    </div>
+</body>
+</html>
